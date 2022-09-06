@@ -1,7 +1,6 @@
 import './App.css';
 import React, { useEffect, useState } from 'react'
 import Recipe from './components/Recipe';
-import axios from 'axios'
 
 const App = () => {
   const APP_ID = 'a547920a'
@@ -31,12 +30,6 @@ const App = () => {
     // clear input field after search results
     setSearch('')
   }
-
-// Too many bugs with axios
-// useEffect(() => {
-//   axios.get(`https://api.edamam.com/search?q=eggs&app_id=${APP_ID}&app_key=${APP_KEY}`)
-//   .then(response => setRecipes(response.data))
-// }, [])
 
   useEffect(() => {
     getRecipes();
