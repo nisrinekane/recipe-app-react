@@ -1,5 +1,29 @@
 .App {
   text-align: center;
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+}
+
+.card {
+  margin: 20px auto;
+  width: 800px;
+  padding: 0.5rem;
+  box-shadow: 5px 7px;
+}
+
+img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+
+ol li{
+  list-style-type: none;
+}
+
+.card-title {
+  font-size: 2rem;
+  color:#09203f;
 }
 
 .App-logo {
